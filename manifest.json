@@ -1,0 +1,22 @@
+{
+    "short_name": "Kidabelhão",
+    "name": "Kidabelhão Mobile",
+    "description": "O Blog mais louco,mas Mobile",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#4CAF50",
+    "icons": [
+      {
+        "src": "/img/downloading_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "/img/downloading_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ]
+  }
+  

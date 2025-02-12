@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reddy</title>
+    <style>
+        body {
+            font-family: 'comic sans ms';
+        }
+        #post {
+            display: none;
+        }
+        #posts {
+            margin-top: 20px;
+        }
+        #posts div {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        #posts h2 {
+            margin: 0;
+        }
+        #posts p {
+            margin: 0;
+        }
+        #titulo {
+            width: 100%;
+            margin-top: 10px;
+            padding: 5px;
+        }
+        #conteudo {
+            width: 100%;
+            margin-top: 10px;
+            padding: 5px;
+            height: 100px;
+        }
+        #salvar {
+            margin-top: 10px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>reddy</h1>
+    <p>reddy é uma rede social</p>
+    <div id="posts">
+        <button id="btn">novo</button>
+    </div>
+    <div id="post">
+        <input type="text" id="titulo" placeholder="titulo">
+        <textarea id="conteudo" placeholder="conteudo"></textarea>
+        <button id="salvar">salvar</button>
+        <script>
+            document.getElementById('btn').addEventListener('click', () => {
+                document.getElementById('post').style.display = 'block';
+            });
+            document.getElementById('salvar').addEventListener('click', () => {
+                let titulo = document.getElementById('titulo').value;
+                let conteudo = document.getElementById('conteudo').value;
+                let post = document.createElement('div');
+                post.innerHTML = `<h2>${titulo}</h2><p>${conteudo}</p>`;
+                document.getElementById('posts').appendChild(post);
+                document.getElementById('post').style.display = 'none';
+            });
+        </script>
+</body>
+</html>

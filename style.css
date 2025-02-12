@@ -1,0 +1,68 @@
+/* Importa a fonte Roboto do Google */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+/* Variáveis do Material You */
+:root {
+    --md-sys-color-primary: #ff9100;
+    --md-sys-color-secondary: #03DAC6;
+    --md-sys-color-background: #F5F5F5;
+    --md-sys-color-surface: #FFFFFF;
+    --md-sys-color-on-primary: #FFFFFF;
+    --md-sys-shape-corner: 16px;
+}
+
+/* Estilo global */
+body {
+    background-color: var(--md-sys-color-background);
+    font-family: 'Roboto', sans-serif;
+    color: #202124;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Estilo dos títulos e textos */
+h1, h2, p, a {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Estilo dos links como botões */
+a {
+    display: inline-block;
+    padding: 12px 24px;
+    margin: 8px 0;
+    background-color: var(--md-sys-color-primary);
+    color: var(--md-sys-color-on-primary);
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: var(--md-sys-shape-corner);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+a:hover {
+    background-color: #ff5722;
+    transform: translateY(-2px);
+}
+
+a:active {
+    background-color: #e64a19;
+    transform: translateY(0);
+}
+
+/* Cartões arredondados */
+.card {
+    background-color: var(--md-sys-color-surface);
+    padding: 16px;
+    border-radius: var(--md-sys-shape-corner);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 16px;
+}
+
+/* Ícones do Material */
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+    color: var(--md-sys-color-primary);
+}

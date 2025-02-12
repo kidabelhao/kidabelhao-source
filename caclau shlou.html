@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>caclau shlouZ4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="index.html">pagina</a>
+    <h1>natal do ireneu 1</h1>
+    <p> o sapinho</p>
+   <input id="casio" type="text" placeholder="escreva">
+  <h2>poste</h2>
+<p id="messag">pibern</p>
+   <script>
+        const textInput = document.getElementById('casio');
+        const message = document.getElementById('messag');
+     const responses = {
+            "oi": "Oi nada, fala direito! 😜",
+            "tudo bem": "Tudo ótimo, mas e você? Tá bem mesmo ou só disfarçando? 🤔",
+            "banana": "Não acredito que você digitou 'banana'. Quer um prêmio? 🍌",
+            "computador": "Eu sou um computador e estou te julgando. 💻",
+            "zueira": "Zueira? Aqui é só o começo! 😂",
+            "bosta" : "olá,barney"
+        };
+   
+  textInput.addEventListener('input', () => {
+            const userInput = textInput.value.toLowerCase().trim(); // Normaliza o texto
+            const response = responses[userInput] 
+                ? responses[userInput] 
+                : `Você digitou: ${userInput} (Eu nem sei o que dizer sobre isso,paiaço)`;
+
+            message.textContent = response;
+        });
+   </script>
+</body>
+</html>
